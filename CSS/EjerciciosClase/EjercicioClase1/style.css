@@ -18,7 +18,17 @@ body > header {
   justify-content: space-between;
   align-items: center;
 
-  border: 5px solid black;
+  border: 0 solid rgb(112, 81, 175);
+  border-bottom-width: 5px;
+}
+
+body > header,
+body > footer {
+  background-image: linear-gradient(to bottom, violet 0%, MediumPurple 100%);
+}
+
+body > header h1 {
+  color: white;
 }
 
 body form {
@@ -26,15 +36,11 @@ body form {
 }
 
 body > nav {
-  height: 5vh; /* Se pide un 5vh, a pesar de que haga que no se vea como la imagen */
+  /* height: 5vh; Se pide un 5vh, pero queda mal, y distinto a la imagen */
   margin-bottom: 0.5vh;
   padding: 0.5em;
 
   border: 3px solid gray;
-}
-
-nav > * {
-  /* background-color: red; */
 }
 
 /* Contenido Principal */
@@ -44,10 +50,13 @@ main {
 
   border: 5px solid blue;
   padding: 0.2em;
+
+  background-image: url(../Materiales/fondo_temporal.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 section {
-  border: 3px solid lightseagreen;
   padding: 0.3em;
 }
 
@@ -63,8 +72,16 @@ section:nth-child(2) {
 
 article {
   margin: 1em 0;
-  border: 3px solid goldenrod;
   border-radius: 30px;
+
+  background: rgba(128, 128, 128, 0.7);
+  box-shadow: 3px 0px 8px rgba(0, 0, 0, 0.4);
+
+  background-image: linear-gradient(
+    to top left,
+    black -10%,
+    rgba(255, 255, 255, 0) 20%
+  );
 }
 
 article header,
