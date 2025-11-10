@@ -1,0 +1,87 @@
+* {
+  padding: 0.5em;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Encabezado */
+
+body > header {
+  height: 10vh;
+  padding: 1em;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  border: 5px solid black;
+}
+
+body form {
+  align-self: flex-start;
+}
+
+body > nav {
+  height: 5vh; /* Se pide un 5vh, a pesar de que haga que no se vea como la imagen */
+  margin-bottom: 0.5vh;
+  padding: 0.5em;
+
+  border: 3px solid gray;
+}
+
+nav > * {
+  /* background-color: red; */
+}
+
+/* Contenido Principal */
+main {
+  display: flex;
+  flex-direction: row;
+
+  border: 5px solid blue;
+  padding: 0.2em;
+}
+
+section {
+  border: 3px solid lightseagreen;
+  padding: 0.3em;
+}
+
+/* Noticias y Publicidad */
+section:first-child {
+  width: 15vw;
+}
+
+/* Artículos */
+section:nth-child(2) {
+  width: auto;
+}
+
+article {
+  margin: 1em 0;
+  border: 3px solid goldenrod;
+  border-radius: 30px;
+}
+
+article header,
+article h2 {
+  padding: 0;
+}
+article > header {
+  text-align: center;
+}
+
+article p {
+  margin: 0;
+}
+
+article figure {
+  margin: 0;
+}
+article img {
+  padding: 0;
+}
