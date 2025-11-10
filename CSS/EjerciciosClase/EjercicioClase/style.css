@@ -51,7 +51,7 @@ main {
   border: 5px solid blue;
   padding: 0.2em;
 
-  background-image: url(../Materiales/fondo_temporal.jpg);
+  background-image: url(img/fondo_temporal.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
@@ -77,11 +77,7 @@ article {
   background: rgba(128, 128, 128, 0.7);
   box-shadow: 3px 0px 8px rgba(0, 0, 0, 0.4);
 
-  background-image: linear-gradient(
-    to top left,
-    black -10%,
-    rgba(255, 255, 255, 0) 20%
-  );
+  background-image: linear-gradient(to top left, black -10%, rgba(255, 255, 255, 0) 20%);
 }
 
 article header,
