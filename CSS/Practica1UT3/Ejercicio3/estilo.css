@@ -119,8 +119,8 @@ body {
 .tarjeta .info ul {
   flex: 2;
 }
-.tarjeta .info li {
-  margin-top: 8px;
+.tarjeta .info li:not(:last-child) {
+  margin-bottom: 8px;
 }
 
 /* competencias */
