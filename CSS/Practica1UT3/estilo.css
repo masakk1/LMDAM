@@ -5,6 +5,14 @@ bordes
 fuente externa
 */
 
+/* 
+NOTAS:
+1. Por qué desde mi casa, el logo sí que cambia de tamaño??*/
+
+* {
+  box-sizing: border-box;
+}
+
 body,
 html {
     margin: 0;
@@ -46,7 +54,19 @@ main {
 footer {
     min-height: 10vh;
 
-    border-radius: 16px 16px 0 0;
+  border-radius: 16px 16px 0 0;
+  background-color: burlywood;
 
-    background-color: burlywood;
+  padding: 1em;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+footer * {
+  text-align: right;
+}
+
+footer p {
+  margin: 0;
 }
