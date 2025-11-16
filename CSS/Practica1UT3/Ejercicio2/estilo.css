@@ -19,7 +19,7 @@ html {
   background-color: antiquewhite;
 }
 
-/* CABEZERA */
+/* #region Cabezera */
 body > header {
   min-height: 10vh;
   padding: 1vw;
@@ -46,13 +46,92 @@ body > header {
 
   border-radius: 16px;
 }
+/* #endregion */
 
-/* CONTENIDO */
+/* #region Contenido */
 main {
   min-height: 80vh;
+  margin: 0.5em 0;
+
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
 }
 
-/* PIE DE PAGINA */
+.main-content {
+  display: flex;
+  flex-direction: column;
+}
+
+/* #region Formulario */
+.formulario-mensajes form {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: 1em;
+
+  padding: 1em;
+}
+
+.input-box {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+form > button {
+  align-self: flex-end;
+  border: none;
+
+  font-weight: bold;
+
+  border-radius: 8px;
+  background-color: #04aa6d;
+  color: white;
+
+  padding: 8px;
+}
+
+form textarea {
+  resize: vertical;
+  min-height: 2em;
+}
+/* #endregion */
+
+/* #region Navegación */
+.menu {
+  margin: 0;
+  padding: 0;
+
+  display: flex;
+  flex-direction: row wrap;
+  gap: 0.2em;
+  justify-content: space-around;
+
+  list-style: none;
+
+  border-radius: 8px;
+  overflow: hidden; /* para clipear el bg-color de los items */
+}
+.menu li {
+  padding: 4px;
+  flex: 1;
+  text-align: center;
+  background-color: black;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+
+.menu li:hover {
+  background-color: gray;
+}
+/* #endregion */
+
+/* #endregion */
+
+/* #region Pie de pagina */
 footer {
   min-height: 10vh;
 
@@ -72,3 +151,4 @@ footer * {
 footer p {
   margin: 0;
 }
+/* #endregion */
