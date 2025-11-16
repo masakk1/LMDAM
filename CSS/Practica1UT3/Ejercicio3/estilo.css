@@ -88,6 +88,9 @@ body {
 .tarjeta h3 {
   margin-bottom: 8px;
 }
+.tarjeta .item:not(:last-child) {
+  margin-bottom: 48px;
+}
 
 .tarjeta {
   margin: 5vw;
