@@ -1,4 +1,4 @@
 {
-  "printWidth": 120,
-  "htmlWhitespaceSensitivity": "ignore"
+  "tabWidth": 2,
+  "useTabs": false
 }
