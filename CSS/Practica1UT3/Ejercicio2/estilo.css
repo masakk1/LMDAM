@@ -1,0 +1,74 @@
+/* Incorporar:
+colores
+bordes
+
+fuente externa
+*/
+
+/* 
+NOTAS:
+1. Por qué desde mi casa, el logo sí que cambia de tamaño??*/
+
+* {
+  box-sizing: border-box;
+}
+
+body,
+html {
+  margin: 0;
+  background-color: antiquewhite;
+}
+
+/* CABEZERA */
+body > header {
+  min-height: 10vh;
+  padding: 1vw;
+
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 1em;
+
+  border-radius: 0 0 16px 16px;
+
+  background-color: burlywood;
+}
+
+.logo {
+  /* min-width: 128px;
+    min-height: 128px; */
+  width: 128px;
+  height: 128px;
+
+  background-image: url("img/logo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  border-radius: 16px;
+}
+
+/* CONTENIDO */
+main {
+  min-height: 80vh;
+}
+
+/* PIE DE PAGINA */
+footer {
+  min-height: 10vh;
+
+  border-radius: 16px 16px 0 0;
+  background-color: burlywood;
+
+  padding: 1em;
+
+  display: flex;
+  flex-direction: column;
+  gap: 0.5em;
+}
+footer * {
+  text-align: right;
+}
+
+footer p {
+  margin: 0;
+}
