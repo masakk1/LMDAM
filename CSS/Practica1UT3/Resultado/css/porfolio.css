@@ -1,0 +1,93 @@
+.banner {
+  /* background: var(--background); */
+  height: 90vh;
+
+  padding: 1em;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.texto-superior {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.texto-superior .izquierda {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+
+.banner .contenido {
+  flex: 1;
+
+  display: flex;
+  flex-direction: row;
+}
+/* @media screen and (width <= 800px) {
+  .banner .contenido {
+    flex-direction: column;
+  }
+} */
+
+.banner .contenido-imagen {
+  flex: 1;
+}
+
+.banner .contenedor-texto {
+  flex: 1;
+}
+
+.banner .contenido-texto {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1em;
+  padding: 0 15%;
+}
+.banner .contenido-texto p {
+  text-align: center;
+}
+
+.banner-title {
+  font-size: 1.5em;
+  letter-spacing: 0.3em;
+}
+.banner-title h1 {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+.banner-title *:nth-child(1) {
+  margin-left: 0px;
+}
+.banner-title *:nth-child(2) {
+  margin-left: 15%;
+}
+.banner-title *:nth-child(3) {
+  margin-left: 30%;
+}
+
+.banner-buttons button {
+  align-self: flex-end;
+  border: none;
+
+  font-weight: bold;
+
+  border-radius: 8px;
+  background: var(--background);
+  border: 2px solid var(--primary);
+  color: var(--primary);
+
+  padding: 8px 16px;
+}
+.banner button.highlight {
+  background: var(--primary);
+  border: 2px solid var(--background);
+  color: var(--background);
+}

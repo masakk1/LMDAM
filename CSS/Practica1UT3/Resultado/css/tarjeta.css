@@ -1,0 +1,53 @@
+/* #region Tarjeta */
+
+.tarjeta h2 {
+  margin-bottom: 16px;
+}
+.tarjeta h3 {
+  margin-bottom: 8px;
+}
+.tarjeta .item:not(:last-child) {
+  margin-bottom: 48px;
+}
+
+.tarjeta {
+  margin: 5vw;
+  padding: 2em;
+
+  max-width: 900px;
+
+  /* ya tiene flex */
+  gap: 0.5em;
+
+  border-radius: 40px;
+
+  background-color: var(--background);
+}
+
+.tarjeta .info {
+  /* ya tiene flex */
+  gap: 2em;
+  margin-bottom: 48px;
+}
+
+/* info */
+.tarjeta .info p {
+  flex: 3;
+}
+.tarjeta .info ul {
+  flex: 2;
+}
+.tarjeta .info li:not(:last-child) {
+  margin-bottom: 8px;
+}
+
+/* competencias */
+.mostrar-competencias {
+  gap: 2em;
+}
+
+.tarjeta .competencia {
+  gap: 0.5em;
+}
+
+/* #endregion */
