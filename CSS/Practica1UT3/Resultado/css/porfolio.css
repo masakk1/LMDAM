@@ -73,21 +73,53 @@
   margin-left: 30%;
 }
 
-.banner-buttons button {
-  align-self: flex-end;
+.banner-buttons {
+  display: flex;
+  flex-wrap: no-wrap;
+  text-wrap: nowrap;
+  gap: 8px;
+}
+
+.banner-buttons .button {
   border: none;
 
   font-weight: bold;
 
-  border-radius: 8px;
+  padding: 6px 14px;
+  border-radius: 16px;
   background: var(--background);
   border: 2px solid var(--primary);
-  color: var(--primary);
 
-  padding: 8px 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4em;
+
+  transition: gap 100ms;
+  text-decoration: none;
 }
-.banner button.highlight {
+.button span {
+  color: var(--primary);
+}
+
+.banner-buttons .button.highlight {
   background: var(--primary);
   border: 2px solid var(--background);
+}
+.button.highlight span {
   color: var(--background);
+}
+
+.banner-buttons .button:hover {
+  box-shadow: 0 20px 50px 8px rgba(0, 0, 0, 0.1);
+  gap: 1.5em;
+  transition: all 200ms;
+}
+
+.contenido-imagen {
+  display: flex;
+  align-items: flex-end;
+}
+.contenido-imagen img {
+  width: 100%;
 }
