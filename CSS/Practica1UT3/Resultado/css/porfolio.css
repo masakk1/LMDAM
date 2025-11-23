@@ -74,6 +74,32 @@
   margin-left: 30%;
 }
 
+#banner-title-background {
+  position: absolute;
+  width: 10em;
+  height: 2em;
+  rotate: 40deg;
+  background: repeating-linear-gradient(
+    to left,
+    var(--accent),
+    /* line color */ var(--accent) 2px,
+    /* line thickness */ transparent 2px,
+    /* space after line starts */ transparent 10px /* distance to next line */
+  );
+
+  z-index: -1;
+
+  top: 2.5em;
+  left: -2em;
+}
+
+@media screen and (width > 1900px) {
+  #banner-title-background {
+    rotate: 35deg;
+    width: 14em;
+  }
+}
+
 .banner-buttons {
   display: flex;
   flex-wrap: no-wrap;
@@ -117,16 +143,96 @@
   transition: all 200ms;
 }
 
-.banner {
-  position: static;
-}
-
 .contenido-imagen img {
-  width: 50%;
+  /* background-color: red; */
+  min-width: 800px;
   height: auto;
   position: absolute;
   left: 65%;
   top: 50%;
   translate: -50% -50%;
-  max-width: 50%;
 }
+@media screen and (width <= 1400px) {
+  .contenido-imagen img {
+    min-width: 500px;
+  }
+}
+@media screen and (width <= 1000px) {
+  .contenido-imagen img {
+    min-width: 500px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+  }
+  .banner .contenido {
+    flex-direction: column;
+  }
+}
+
+/* #endregion ContenidoBanner */
+
+/* #endregion BANNER */
+
+/* #region NAV */
+
+body > nav {
+  height: 7vh;
+  width: 80vw;
+  margin: auto;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+
+  gap: 0.3em;
+
+  border-radius: 16px;
+  /* overflow: hidden; */
+}
+body > nav a:first-child {
+  border-radius: 16px 0 0 16px;
+}
+body > nav a:last-child {
+  border-radius: 0 16px 16px 0;
+}
+
+body > nav a {
+  flex: 3;
+  height: 100%;
+  background: var(--primary);
+
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  font-weight: normal;
+  font-optical-sizing: auto;
+  text-decoration: none;
+  transition: all 200ms;
+
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  padding: 10px 20px;
+}
+body > nav a:hover {
+  flex: 4;
+
+  font-weight: bold;
+  font-size: 1.75em;
+
+  letter-spacing: 0.2em;
+
+  margin-bottom: 0.8em;
+  border-radius: 16px;
+
+  transition: all 200ms ease;
+}
+
+body > nav p {
+  color: var(--background);
+  transition: margin 200ms ease;
+}
+
+/* #endregion NAV */
