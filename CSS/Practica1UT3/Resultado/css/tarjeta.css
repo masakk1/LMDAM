@@ -11,10 +11,9 @@
 }
 
 .tarjeta {
-  margin: 5vw;
   padding: 2em;
 
-  /* max-width: 900px; */
+  max-width: 900px;
 
   /* ya tiene flex */
   gap: 0.5em;

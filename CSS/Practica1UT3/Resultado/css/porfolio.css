@@ -277,7 +277,16 @@ body > nav p {
 /* #region MAIN */
 
 main {
-  height: 75vh;
+  /* height: 75vh; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2vh;
+  padding: 5vw;
+  padding-bottom: 0;
 }
 
 /* #endregion MAIN */
@@ -285,7 +294,9 @@ main {
 /* #region FOOTER */
 
 footer {
-  height: 10vh;
+  min-height: 9vh;
+  z-index: -1;
+  margin-top: -1vh;
   background-color: var(--primary);
 
   display: flex;
