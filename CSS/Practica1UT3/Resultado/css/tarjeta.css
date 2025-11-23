@@ -14,23 +14,23 @@
   margin: 5vw;
   padding: 2em;
 
-  max-width: 900px;
+  /* max-width: 900px; */
 
   /* ya tiene flex */
   gap: 0.5em;
 
   border-radius: 40px;
 
+  box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.14),
+    0px 1px 10px 0px rgba(0, 0, 0, 0.12), 0px 2px 4px -1px rgba(0, 0, 0, 0.2);
   background-color: var(--background);
 }
 
+.mostrar-competencias,
 .tarjeta .info {
-  /* ya tiene flex */
   gap: 2em;
-  margin-bottom: 48px;
 }
 
-/* info */
 .tarjeta .info p {
   flex: 3;
 }
@@ -39,11 +39,6 @@
 }
 .tarjeta .info li:not(:last-child) {
   margin-bottom: 8px;
-}
-
-/* competencias */
-.mostrar-competencias {
-  gap: 2em;
 }
 
 .tarjeta .competencia {

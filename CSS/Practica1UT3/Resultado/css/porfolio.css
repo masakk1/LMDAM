@@ -1,3 +1,5 @@
+/* #region BANNER */
+
 .banner {
   /* background: var(--background); */
   height: 90vh;
@@ -8,16 +10,35 @@
   flex-direction: column;
 }
 
+/* #region TextoSuperior */
+
 .texto-superior {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+
+  padding: 8px 16px;
+  border-radius: 64px;
+  border: 2px solid var(--primary);
+
+  font-weight: bold;
 }
 .texto-superior .izquierda {
   display: flex;
   flex-direction: row;
   gap: 1em;
 }
+.texto-superior * {
+  color: var(--primary);
+}
+.separador {
+  align-self: stretch;
+  border: 1px solid var(--secondary);
+}
+
+/* #endregion TextoSuperior */
+
+/* #region ContenidoBanner */
 
 .banner .contenido {
   flex: 1;
@@ -57,6 +78,7 @@
 }
 
 .banner-title {
+  position: relative;
   font-size: 1.5em;
   letter-spacing: 0.3em;
 }
@@ -151,7 +173,19 @@
   left: 65%;
   top: 50%;
   translate: -50% -50%;
+
+  transition: transform 200ms;
 }
+
+.contenido-imagen img:hover {
+  transform: rotate(5deg) scale(1.1);
+  transition: transform 100ms ease;
+}
+.contenido-imagen img:active {
+  transform: rotate(5deg) scale(1.3);
+  transition: transform 100ms ease;
+}
+
 @media screen and (width <= 1400px) {
   .contenido-imagen img {
     min-width: 500px;
@@ -178,7 +212,9 @@
 body > nav {
   height: 7vh;
   width: 80vw;
+  max-width: 800px;
   margin: auto;
+  margin-bottom: 3vh;
 
   display: flex;
   flex-direction: row;
@@ -201,11 +237,12 @@ body > nav a {
   flex: 3;
   height: 100%;
   background: var(--primary);
+  box-shadow: 0px 16px 24px 2px rgba(0, 0, 0, 0.14),
+    0px 6px 30px 5px rgba(0, 0, 0, 0.12), 0px 8px 10px -7px rgba(0, 0, 0, 0.2);
 
   font-size: 1.5rem;
   letter-spacing: 0.1em;
   font-weight: normal;
-  font-optical-sizing: auto;
   text-decoration: none;
   transition: all 200ms;
 
@@ -236,3 +273,28 @@ body > nav p {
 }
 
 /* #endregion NAV */
+
+/* #region MAIN */
+
+main {
+  height: 75vh;
+}
+
+/* #endregion MAIN */
+
+/* #region FOOTER */
+
+footer {
+  height: 10vh;
+  background-color: var(--primary);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer em {
+  color: var(--background);
+}
+
+/* #endregion FOOTER */
