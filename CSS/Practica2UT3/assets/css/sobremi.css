@@ -1,0 +1,244 @@
+/* #region BANNER */
+
+.banner {
+  /* background: var(--background); */
+  height: 90vh;
+
+  padding: 1em;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* #region TextoSuperior */
+
+.texto-superior {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+
+  padding: 8px 16px;
+  border-radius: 64px;
+  border: 2px solid var(--primary);
+
+  font-weight: bold;
+}
+.texto-superior .izquierda {
+  display: flex;
+  flex-direction: row;
+  gap: 1em;
+}
+.texto-superior * {
+  color: var(--primary);
+}
+.separador {
+  align-self: stretch;
+  border: 1px solid var(--secondary);
+}
+
+/* #endregion TextoSuperior */
+
+/* #region ContenidoBanner */
+
+.banner .contenido {
+  flex: 1;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+/* @media screen and (width <= 800px) {
+  .banner .contenido {
+    flex-direction: column;
+  }
+} */
+
+.banner .contenido-imagen {
+  flex: 1;
+}
+
+.banner .contenedor-texto {
+  flex: 1;
+}
+
+.banner .contenido-texto {
+  margin: auto;
+  height: 100%;
+  width: 100%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: center;
+  gap: 1em;
+  padding: 0 15%;
+}
+.banner .contenido-texto p {
+  text-align: center;
+}
+
+.banner-title {
+  position: relative;
+  font-size: 1.5em;
+  letter-spacing: 0.3em;
+}
+.banner-title h1 {
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  font-weight: normal;
+}
+.banner-title *:nth-child(1) {
+  margin-left: 0px;
+}
+.banner-title *:nth-child(2) {
+  margin-left: 15%;
+}
+.banner-title *:nth-child(3) {
+  margin-left: 30%;
+}
+
+#banner-title-background {
+  position: absolute;
+  width: 10em;
+  height: 2em;
+  rotate: 40deg;
+  background: repeating-linear-gradient(
+    to left,
+    var(--accent),
+    /* line color */ var(--accent) 2px,
+    /* line thickness */ transparent 2px,
+    /* space after line starts */ transparent 10px /* distance to next line */
+  );
+
+  z-index: -1;
+
+  top: 2.5em;
+  left: -2em;
+}
+
+@media screen and (width > 1900px) {
+  #banner-title-background {
+    rotate: 35deg;
+    width: 14em;
+  }
+}
+
+.banner-buttons {
+  display: flex;
+  flex-wrap: no-wrap;
+  text-wrap: nowrap;
+  gap: 8px;
+}
+
+.banner-buttons .button {
+  border: none;
+
+  font-weight: bold;
+
+  padding: 6px 14px;
+  border-radius: 16px;
+  background: var(--background);
+  border: 2px solid var(--primary);
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.4em;
+
+  transition: gap 100ms;
+  text-decoration: none;
+}
+.button span {
+  color: var(--primary);
+}
+
+.banner-buttons .button.highlight {
+  background: var(--primary);
+  border: 2px solid var(--background);
+}
+.button.highlight span {
+  color: var(--background);
+}
+
+.banner-buttons .button:hover {
+  box-shadow: 0 20px 50px 8px rgba(0, 0, 0, 0.1);
+  gap: 1.5em;
+  transition: all 200ms;
+}
+
+.contenido-imagen img {
+  /* background-color: red; */
+  min-width: 800px;
+  height: auto;
+  position: absolute;
+  left: 65%;
+  top: 50%;
+  translate: -50% -50%;
+
+  transition: transform 200ms;
+}
+
+.contenido-imagen img:hover {
+  transform: rotate(5deg) scale(1.1);
+  transition: transform 100ms ease;
+}
+.contenido-imagen img:active {
+  transform: rotate(5deg) scale(1.3);
+  transition: transform 100ms ease;
+}
+
+@media screen and (width <= 1400px) {
+  .contenido-imagen img {
+    min-width: 500px;
+  }
+}
+@media screen and (width <= 1000px) {
+  .contenido-imagen img {
+    min-width: 500px;
+    position: relative;
+    top: 50%;
+    left: 50%;
+  }
+  .banner .contenido {
+    flex-direction: column;
+  }
+}
+
+/* #endregion ContenidoBanner */
+
+/* #endregion BANNER */
+
+/* #region MAIN */
+
+main {
+  /* height: 75vh; */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  gap: 2vh;
+  padding: 5vw;
+  padding-bottom: 0;
+}
+
+/* #endregion MAIN */
+
+/* #region FOOTER */
+
+footer {
+  min-height: 9vh;
+  z-index: -1;
+  margin-top: -1vh;
+  background-color: var(--primary);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+footer em {
+  color: var(--background);
+}
+
+/* #endregion FOOTER */
