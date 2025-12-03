@@ -5,6 +5,9 @@
   --primary: #a5b560;
   --secondary: #acd099;
   --accent: #93c582;
+
+  --font-title: Montserrat, Arial, Helvetica, sans-serif;
+  --font-text: Inter, sans-serif;
 }
 
 /* #endregion */
