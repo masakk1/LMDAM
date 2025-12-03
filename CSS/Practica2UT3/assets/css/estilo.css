@@ -24,6 +24,12 @@ body {
 }
 
 /* #region Material icons: Recommended icon sizes */
+.material-symbols-outlined {
+  font-variation-settings: "wght" 400, "GRAD" 0 !important;
+}
+span.fill {
+  font-variation-settings: "FILL" 1 !important;
+}
 span.size-20 {
   font-size: 20px;
   font-variation-settings: "OPSZ" 20;
