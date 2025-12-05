@@ -21,14 +21,14 @@
   border-radius: 16px;
   /* overflow: hidden; */
 }
-.nav a:first-child {
+.nav > *:first-child {
   border-radius: 16px 0 0 16px;
 }
-.nav a:last-child {
+.nav > *:last-child {
   border-radius: 0 16px 16px 0;
 }
 
-.nav a {
+.nav > * {
   flex: 5;
   height: 100%;
   background: var(--primary);
@@ -50,8 +50,9 @@
 
   transition: all 200ms ease;
 }
-.nav a:hover,
-.nav a:focus {
+
+.nav > *:hover,
+.nav > *:focus {
   flex: 6;
   z-index: 10;
 
@@ -65,8 +66,11 @@
   box-shadow: 0px 24px 38px 3px rgba(0, 0, 0, 0.14),
     0px 9px 46px 8px rgba(0, 0, 0, 0.12), 0px 11px 15px -7px rgba(0, 0, 0, 0.2);
 }
+#boton-buscar:hover {
+  flex: 20;
+}
 
-.nav a:focus {
+.nav > *:focus {
   background: var(--secondary);
 }
 
@@ -75,6 +79,20 @@
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+#boton-buscar {
+  cursor: text;
+}
+#buscar {
+  background: transparent;
+  border: 0;
+  flex: 1;
+  width: 0;
+
+  font-size: 1em;
+  padding: 0;
+  margin: 0;
 }
 
 @media screen and (width <= 900px) {

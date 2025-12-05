@@ -45,65 +45,199 @@
           >
           <p>Portafolio</p>
         </a>
-        <a href="#">
+        <label for="buscar" id="boton-buscar">
           <span class="material-symbols-outlined size-48">search</span>
-          <p>Buscar</p>
-        </a>
+          <input
+            type="text"
+            name="buscar"
+            id="buscar"
+            placeholder="Buscar..."
+          />
+        </label>
       </nav>
     </div>
-    <main class="project-card-gallery noise">
-      <a href="#" class="project-card sin-decoraciones">
+    <main class="project-card-gallery">
+      <div class="project-card card-blue">
         <div class="project-image-container">
           <img
             class="project-image"
+            style="scale: 1.1"
             src="./assets/imgs/projectos/projecto-1.png"
-            alt="projecto-1"
+            alt="foto de applicacion easy effects"
           />
-          <div class="project-image-gradient"></div>
-          <div class="project-image-link">
-            <span class="material-symbols-outlined size-40">arrow_outward</span>
-          </div>
-          <div class="project-title">
-            <h2>Projecto 1</h2>
-            <div class="project-icon"></div>
-            <img
-              class="project-icon"
-              src="./assets/imgs/iconos/icono-projecto-1.svg"
-              alt="icono projecto-1"
-            />
-          </div>
+        </div>
+        <div class="project-title">
+          <h2>Easy Effects</h2>
         </div>
         <div class="project-details">
-          <p>lenguajes: hola mundo</p>
-          <p>frameworks: uno con dos</p>
+          <div class="project-details-row">
+            <p>Languages</p>
+            <a
+              href="https://doc.qt.io/qt-6/qtqml-index.html"
+              class="sin-decoraciones project-label tooltip"
+            >
+              QML
+              <span class="tooltip-text">doc.qt.io/qt-6/qtqml-index.html</span>
+            </a>
+            <a
+              href="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+              class="sin-decoraciones project-label tooltip"
+            >
+              JavaScript
+              <span class="tooltip-text"
+                >developer.mozilla.org/en-US/docs/Web/JavaScript</span
+              >
+            </a>
+          </div>
+          <div class="project-details-row">
+            <p>Frameworks</p>
+            <a
+              href="https://www.qt.io/"
+              class="sin-decoraciones project-label tooltip"
+            >
+              Qt
+              <span class="tooltip-text">qt.io</span>
+            </a>
+            <a
+              href="https://develop.kde.org/frameworks/kirigami/"
+              class="sin-decoraciones project-label tooltip"
+            >
+              Kirigami
+              <span class="tooltip-text"
+                >develop.kde.org/frameworks/kirigami</span
+              >
+            </a>
+          </div>
         </div>
-      </a>
-      <a href="#" class="project-card sin-decoraciones">
+        <div class="project-link-container">
+          <a
+            href="https://github.com/wwmm/easyeffects"
+            class="sin-decoraciones project-link"
+          >
+            <p>Repositorio</p>
+            <span class="material-symbols-outlined size-40">
+              arrow_forward
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="project-card card-yellow">
         <div class="project-image-container">
           <img
             class="project-image"
-            src="./assets/imgs/projectos/projecto-1.png"
-            alt="projecto-1"
+            style="scale: 1.1"
+            src="./assets/imgs/projectos/projecto-2.png"
+            alt="foto aplicación amberol"
           />
-          <div class="project-image-gradient"></div>
-          <div class="project-image-link">
-            <span class="material-symbols-outlined size-40">arrow_outward</span>
-          </div>
-          <div class="project-title">
-            <h2>Titulo 1</h2>
-            <div class="project-icon"></div>
-            <img
-              class="project-icon"
-              src="./assets/imgs/iconos/icono-projecto-1.svg"
-              alt="icono projecto-1"
-            />
-          </div>
+        </div>
+        <div class="project-title">
+          <h2>Amberol</h2>
         </div>
         <div class="project-details">
-          <p>lenguajes: hola mundo</p>
-          <p>frameworks: uno con dos</p>
+          <div class="project-details-row">
+            <p>Languages</p>
+            <a
+              href="https://rust-lang.org/"
+              class="sin-decoraciones project-label tooltip"
+            >
+              Rust
+              <span class="tooltip-text">rust-lang.org</span>
+            </a>
+          </div>
+          <div class="project-details-row">
+            <p>Frameworks</p>
+            <a
+              href="https://www.gtk.org/"
+              class="sin-decoraciones project-label tooltip"
+            >
+              Gtk
+              <span class="tooltip-text">gtk.org</span>
+            </a>
+            <a
+              href="https://gnome.pages.gitlab.gnome.org/libadwaita/"
+              class="sin-decoraciones project-label tooltip"
+            >
+              Adwaita
+              <span class="tooltip-text"
+                >gnome.pages.gitlab.gnome.org/libadwaita/</span
+              >
+            </a>
+            <a
+              href="https://mesonbuild.com/"
+              class="sin-decoraciones project-label tooltip"
+            >
+              Meson
+              <span class="tooltip-text">mesonbuild.com</span>
+            </a>
+          </div>
         </div>
-      </a>
+        <div class="project-link-container">
+          <a
+            href="https://gitlab.gnome.org/World/amberol"
+            class="sin-decoraciones project-link"
+          >
+            <p>Repositorio</p>
+            <span class="material-symbols-outlined size-40">
+              arrow_forward
+            </span>
+          </a>
+        </div>
+      </div>
+      <div class="project-card card-green">
+        <div class="project-image-container">
+          <img
+            class="project-image"
+            style="scale: 1.1"
+            src="./assets/imgs/projectos/projecto-3.png"
+            alt="projecto-1"
+          />
+        </div>
+        <div class="project-title">
+          <h2>Buffer</h2>
+        </div>
+        <div class="project-details">
+          <div class="project-details-row">
+            <p>Languages</p>
+            <a
+              href="https://rust-lang.org/"
+              class="sin-decoraciones project-label tooltip"
+            >
+              Rust
+              <span class="tooltip-text">rust-lang.org</span>
+            </a>
+          </div>
+          <div class="project-details-row">
+            <p>Frameworks</p>
+            <a
+              href="https://www.gtk.org/"
+              class="sin-decoraciones project-label tooltip"
+            >
+              Gtk
+              <span class="tooltip-text">gtk.org</span>
+            </a>
+            <a
+              href="https://gnome.pages.gitlab.gnome.org/libadwaita/"
+              class="sin-decoraciones project-label tooltip"
+            >
+              Adwaita
+              <span class="tooltip-text"
+                >gnome.pages.gitlab.gnome.org/libadwaita</span
+              >
+            </a>
+          </div>
+        </div>
+        <div class="project-link-container">
+          <a
+            href="https://github.com/wwmm/easyeffects"
+            class="sin-decoraciones project-link"
+          >
+            <p>Repositorio</p>
+            <span class="material-symbols-outlined size-40">
+              arrow_forward
+            </span>
+          </a>
+        </div>
+      </div>
     </main>
   </body>
 </html>

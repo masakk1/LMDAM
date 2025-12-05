@@ -2,3 +2,16 @@
   padding-top: 16px;
   flex-direction: column;
 }
+
+.card-yellow {
+  --card-contrast: #6a4107 !important;
+  --card-primary: #f08c00 !important;
+  --card-secondary: #ffec99 !important;
+  --card-background: #fffbe9 !important;
+}
+.card-blue {
+  --card-contrast: #092a49 !important;
+  --card-primary: #1971c2 !important;
+  --card-secondary: #a5d8ff !important;
+  --card-background: #e7f5ff !important;
+}
