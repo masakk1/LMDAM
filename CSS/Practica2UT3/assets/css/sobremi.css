@@ -36,10 +36,6 @@
 .texto-superior * {
   color: var(--primary);
 }
-.separador {
-  align-self: stretch;
-  border: 1px solid var(--secondary);
-}
 @media screen and (width <= 800px) {
   .texto-superior .izquierda {
     gap: 0.5em;

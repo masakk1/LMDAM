@@ -60,6 +60,38 @@ span.size-48 {
   display: flex;
   flex-direction: column;
 }
+.separador {
+  align-self: stretch;
+  border: 1px solid var(--secondary);
+}
+.tooltip {
+  position: relative;
+}
+.tooltip-text {
+  z-index: 100;
+  position: absolute;
+  left: -50%;
+  top: -2em;
+
+  border-radius: 64px;
+  white-space: nowrap;
+  font-size: small;
+
+  padding: 3px 16px;
+
+  background: var(--text);
+
+  text-decoration-line: underline;
+  font-style: normal !important;
+  font-weight: normal !important;
+  color: var(--background) !important;
+
+  visibility: hidden;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
 
 @media screen and (width <= 800px) {
   .flex-horizontal {
