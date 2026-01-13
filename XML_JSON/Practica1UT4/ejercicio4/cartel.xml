@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="cartel.css" type="text/css"?>
+<cartel>
+    <img class="flex-col">
+        <box class="flex-row flexchildren-grow">
+            <label>Ewan MCGREGOR</label>
+            <label>Albert FINNEY</label>
+            <label>Billy CRUDUP</label>
+            <label>Jessica LANGE</label>
+        </box>
+        <label>Una película de <span class="font-big">TIM BURTON</span></label>
+        <label class="font-fancy">
+            UNA AVENTURA TAN GRANDE COMO LA VIDA MISMA
+        </label>
+    </img>
+</cartel>

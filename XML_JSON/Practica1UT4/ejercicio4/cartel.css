@@ -1,0 +1,64 @@
+.flex-col {
+    display: flex;
+    flex-direction: column;
+}
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+.flexchildren-grow > * {
+    flex: 1;
+}
+
+.font-fancy {
+    font-family: 'Times New Roman', serif;
+    color: lightgreen;
+    text-shadow: 
+      0 0 5px rgba(0, 0, 0, 0.942),
+      4px 4px 8px rgba(0, 0, 0, 0.809);
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-size: 2em;
+}
+
+.font-big {
+    font-size: 3rem;
+}
+
+box {
+    justify-content: center;
+    /* ¡Sorpresa! <br/> */
+}
+
+label {
+    font-size: xx-large;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(62, 23, 1);
+}
+
+img {
+    justify-content: flex-start;
+    align-items: stretch;
+
+    background-image: url(bigFish.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 75vw;
+}
+
+img > *:last-child {
+    margin-top: auto;
+}
+
+@media screen and (width >= 1000px) {
+    img {
+        width: 66vw;
+        height: 49.5vw;
+    }
+    cartel {
+        /* se va a quedar asi lojuro */
+        margin-left: 17vw;
+    }
+}
