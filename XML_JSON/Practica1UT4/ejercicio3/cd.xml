@@ -4,46 +4,30 @@
     <info>
         <img />
         <propiedades>
-            <propiedad>
-                <nombre>artista</nombre>
-                <valor>ABC (@)</valor>
-            </propiedad>
-            <propiedad>
-                <nombre>título</nombre>
-                <valor>The collection</valor>
-            </propiedad>
-            <propiedad>
-                <nombre>sello</nombre>
-                <valor>KARUSSELL INTERNATIONAL</valor>
-            </propiedad>
-            <propiedad>
-                <nombre>referencia</nombre>
-                <valor>551 831-2</valor>
-            </propiedad>
-            <propiedad>
-                <nombre>año</nombre>
-                <valor>1996</valor>
-            </propiedad>
-            <propiedad>
-                <nombre>país</nombre>
-                <valor>Germany</valor>
-            </propiedad>
-            <propiedad>
-                <nombre>formato</nombre>
-                <valor>CD - Compilation</valor>
-            </propiedad>
-            <propiedad>
-                <nombre>género</nombre>
-                <valor>Funk / Soul, Electronic</valor>
-            </propiedad>
-            <propiedad>
-                <nombre>estilo</nombre>
-                <valor>Funk Disco, Synth Pop</valor>
-            </propiedad>
-            <propiedad>
-                <nombre>observaciones</nombre>
-                <valor>Licensed from Mercury Records Ltd (London)</valor>
-            </propiedad>
+            <nombres>
+                <nombre> Artista </nombre>
+                <nombre> Título </nombre>
+                <nombre> Sello </nombre>
+                <nombre> Referencia </nombre>
+                <nombre> Año </nombre>
+                <nombre> País </nombre>
+                <nombre> Formato </nombre>
+                <nombre> Género </nombre>
+                <nombre> Estilo </nombre>
+                <nombre> Observaciones </nombre>
+            </nombres>
+            <valores>
+                <valor class="highlight"> ABC (@) </valor>
+                <valor> The collection </valor>
+                <valor> KARUSSELL INTERNATIONAL </valor>
+                <valor> 551 831-2 </valor>
+                <valor> 1996 </valor>
+                <valor> Germany </valor>
+                <valor> CD - Compilation </valor>
+                <valor> Funk / Soul, Electronic </valor>
+                <valor> Funk Disco, Synth Pop </valor>
+                <valor> Licensed from Mercury Records Ltd (London) </valor>
+            </valores>
         </propiedades>
     </info>
     <text>CD 1</text>

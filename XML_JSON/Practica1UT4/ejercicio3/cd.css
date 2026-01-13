@@ -9,6 +9,8 @@ cd {
   width: 100vw;
   min-height: 100vh;
 
+  padding: 16px;
+
   background-color: var(--bg-color);
 
   display: flex;
@@ -17,33 +19,50 @@ cd {
 
 cd * {
   color: var(--font);
+  font-family:'Courier New', Courier, monospace;
 }
 
 info {
   display: flex;
   flex-direction: row;
+
+  gap: 16px;
 }
 
 img {
   width: 200px;
-  height: 180px;
-  background: url(placeholder.png);
+  height: 200px;
+  background: url(cover.jpeg);
   background-size: cover;
 }
 
 propiedades {
   display: flex;
-  flex-direction: column;
-}
-
-propiedad {
-  display: flex;
   flex-direction: row;
+
+  gap: 8px;
 }
 
+nombres,
+valores,
 canciones {
   display: flex;
   flex-direction: column;
+
+  gap: 2px;
+}
+
+valores valor {
+  text-align: start;
+}
+valores valor.highlight {
+  font-weight: bold;
+  color: var(--font-highlight);
+}
+nombres nombre {
+  text-align: end;
+  text-transform: uppercase;
+  color: var(--font-dim);
 }
 
 cancion:nth-child(odd) {
@@ -53,8 +72,15 @@ cancion:nth-child(odd) {
 cancion {
   display: flex;
   gap: 1em;
+  padding: 0px 6px;
+}
+
+cancion num {
+  font-weight: bold;
+  font-size: small;
 }
 
 cancion duracion {
   color: var(--font-dim);
+  font-size: small;
 }
