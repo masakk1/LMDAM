@@ -1,0 +1,60 @@
+:root {
+  --bg-color: #212733;
+  --color: #11161c;
+  --font-dim: #83888f;
+  --font: #c8cfd7;
+  --font-highlight: #cd9a46;
+}
+cd {
+  width: 100vw;
+  min-height: 100vh;
+
+  background-color: var(--bg-color);
+
+  display: flex;
+  flex-direction: column;
+}
+
+cd * {
+  color: var(--font);
+}
+
+info {
+  display: flex;
+  flex-direction: row;
+}
+
+img {
+  width: 200px;
+  height: 180px;
+  background: url(placeholder.png);
+  background-size: cover;
+}
+
+propiedades {
+  display: flex;
+  flex-direction: column;
+}
+
+propiedad {
+  display: flex;
+  flex-direction: row;
+}
+
+canciones {
+  display: flex;
+  flex-direction: column;
+}
+
+cancion:nth-child(odd) {
+  background-color: var(--color);
+}
+
+cancion {
+  display: flex;
+  gap: 1em;
+}
+
+cancion duracion {
+  color: var(--font-dim);
+}
