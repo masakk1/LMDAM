@@ -1,0 +1,37 @@
+[
+    {
+        "title": "La hora de la verdad",
+        "author": "Miguel Ángel Real Mayor",
+        "genre": "Drama",
+        "year": 2002,
+        "cover": "https://picsum.photos/seed/bazinga/200/150"
+    },
+    {
+        "title": "Tron",
+        "author": "Señorito Walt Disney Panadero",
+        "genre": "Disney",
+        "year": 2008,
+        "cover": "https://picsum.photos/seed/tron/200/150"
+    },
+    {
+        "title": "El señor de los Gramillos",
+        "author": "Santiago Segura Baggins",
+        "genre": "Ficción",
+        "year": 2007,
+        "cover": "https://picsum.photos/seed/gramillos/200/150"
+    },
+    {
+        "title": "El señor de los Ghandillos",
+        "author": "Santiago Segura Ghandi",
+        "genre": "Documental",
+        "year": 2023,
+        "cover": "https://picsum.photos/seed/ghandillos/200/150"
+    },
+    {
+        "title": "Cascanueces",
+        "author": "Tu padre, Noel.",
+        "genre": "Horror",
+        "year": 2012,
+        "cover": "https://picsum.photos/seed/cascanueces/200/150"
+    }
+]
