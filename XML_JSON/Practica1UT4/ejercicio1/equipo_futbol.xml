@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<equipo>
+    <nombre>Girona FC</nombre>
+    <entrenador>Aaron Quirant</entrenador>
+    <jugadores>
+        <jugador>Pablito alonso</jugador>
+        <jugador>Gerard Moreno</jugador>
+        <jugador>Thibaut Curtidos</jugador>
+        <jugador>Ñamil yaml</jugador>
+        <jugador>Pedro de la Torre</jugador>
+    </jugadores>
+</equipo>

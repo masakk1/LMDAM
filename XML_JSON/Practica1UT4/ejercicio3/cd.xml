@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="cd.css" type="text/css"?>
+<cd>
+    <info>
+        <img />
+        <propiedades>
+            <nombres>
+                <nombre> Artista </nombre>
+                <nombre> Título </nombre>
+                <nombre> Sello </nombre>
+                <nombre> Referencia </nombre>
+                <nombre> Año </nombre>
+                <nombre> País </nombre>
+                <nombre> Formato </nombre>
+                <nombre> Género </nombre>
+                <nombre> Estilo </nombre>
+                <nombre> Observaciones </nombre>
+            </nombres>
+            <valores>
+                <valor class="highlight"> ABC (@) </valor>
+                <valor> The collection </valor>
+                <valor> KARUSSELL INTERNATIONAL </valor>
+                <valor> 551 831-2 </valor>
+                <valor> 1996 </valor>
+                <valor> Germany </valor>
+                <valor> CD - Compilation </valor>
+                <valor> Funk / Soul, Electronic </valor>
+                <valor> Funk Disco, Synth Pop </valor>
+                <valor> Licensed from Mercury Records Ltd (London) </valor>
+            </valores>
+        </propiedades>
+    </info>
+    <text>CD 1</text>
+    <canciones>
+        <cancion>
+            <num>01</num>
+            <nombre>Poison Arrow</nombre>
+            <duracion>03:23</duracion>
+        </cancion>
+        <cancion>
+            <num>02</num>
+            <nombre>The Look Of Love (Part One)</nombre>
+            <duracion>03:29</duracion>
+        </cancion>
+        <cancion>
+            <num>03</num>
+            <nombre>The Night You Murdered Love</nombre>
+            <duracion>04:53</duracion>
+        </cancion>
+        <cancion>
+            <num>04</num>
+            <nombre>Tears Are Not Enough</nombre>
+            <duracion>03:29</duracion>
+        </cancion>
+        <cancion>
+            <num>05</num>
+            <nombre>Be Near Me</nombre>
+            <duracion>03:37</duracion>
+        </cancion>
+        <cancion>
+            <num>06</num>
+            <nombre>I'm In Love With You</nombre>
+            <duracion>04:34</duracion>
+        </cancion>
+        <cancion>
+            <num>07</num>
+            <nombre>The Real Thing</nombre>
+            <duracion>04:54</duracion>
+        </cancion>
+        <cancion>
+            <num>08</num>
+            <nombre>Love's a Dangerous Language</nombre>
+            <duracion>03:40</duracion>
+        </cancion>
+        <cancion>
+            <num>09</num>
+            <nombre>The Greatest Love of All</nombre>
+            <duracion>05:34</duracion>
+        </cancion>
+        <cancion>
+            <num>10</num>
+            <nombre>When Smokey Sings</nombre>
+            <duracion>04:18</duracion>
+        </cancion>
+        <cancion>
+            <num>11</num>
+            <nombre>One Better World</nombre>
+            <duracion>05:38</duracion>
+        </cancion>
+        <cancion>
+            <num>12</num>
+            <nombre>Vanity Kills</nombre>
+            <duracion>03:29</duracion>
+        </cancion>
+        <cancion>
+            <num>13</num>
+            <nombre>Bite the Hand</nombre>
+            <duracion>03:07</duracion>
+        </cancion>
+        <cancion>
+            <num>14</num>
+            <nombre>Chicago (Abridged)</nombre>
+            <duracion>03:40</duracion>
+        </cancion>
+        <cancion>
+            <num>15</num>
+            <nombre>Minneapolis</nombre>
+            <duracion>02:57</duracion>
+        </cancion>
+        <cancion>
+            <num>16</num>
+            <nombre>Think Again</nombre>
+            <duracion>03:39</duracion>
+        </cancion>
+        <cancion>
+            <num>17</num>
+            <nombre>Never More Than Now</nombre>
+            <duracion>06:03</duracion>
+        </cancion>
+        <cancion>
+            <num>18</num>
+            <nombre>All Of My Heart</nombre>
+            <duracion>04:49</duracion>
+        </cancion>
+    </canciones>
+</cd>

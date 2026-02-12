@@ -1,0 +1,86 @@
+:root {
+  --bg-color: #212733;
+  --color: #11161c;
+  --font-dim: #83888f;
+  --font: #c8cfd7;
+  --font-highlight: #cd9a46;
+}
+cd {
+  width: 100vw;
+  min-height: 100vh;
+
+  padding: 16px;
+
+  background-color: var(--bg-color);
+
+  display: flex;
+  flex-direction: column;
+}
+
+cd * {
+  color: var(--font);
+  font-family:'Courier New', Courier, monospace;
+}
+
+info {
+  display: flex;
+  flex-direction: row;
+
+  gap: 16px;
+}
+
+img {
+  width: 200px;
+  height: 200px;
+  background: url(cover.jpeg);
+  background-size: cover;
+}
+
+propiedades {
+  display: flex;
+  flex-direction: row;
+
+  gap: 8px;
+}
+
+nombres,
+valores,
+canciones {
+  display: flex;
+  flex-direction: column;
+
+  gap: 2px;
+}
+
+valores valor {
+  text-align: start;
+}
+valores valor.highlight {
+  font-weight: bold;
+  color: var(--font-highlight);
+}
+nombres nombre {
+  text-align: end;
+  text-transform: uppercase;
+  color: var(--font-dim);
+}
+
+cancion:nth-child(odd) {
+  background-color: var(--color);
+}
+
+cancion {
+  display: flex;
+  gap: 1em;
+  padding: 0px 6px;
+}
+
+cancion num {
+  font-weight: bold;
+  font-size: small;
+}
+
+cancion duracion {
+  color: var(--font-dim);
+  font-size: small;
+}
