@@ -1,0 +1,6 @@
+You:hola, Mundo...
+Mundo:Hola Pepito!
+You:wenamechuindasama
+You:tomahartbetsaund
+Mundo:probando\nprobando\nprueba
+Mundo:esta es:otra:prueba
