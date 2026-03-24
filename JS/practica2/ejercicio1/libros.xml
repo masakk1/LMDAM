@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="ISO-8859-15"?>
+<busquedaLibros>
+	<libreria>
+		<nombre>80 Mundos</nombre>
+		<libro>
+			<ISBN>84-350-0202-0</ISBN>
+			<titulo>El Se�or de los Anillos - La Comunidad del Anillo</titulo>
+			<nivelProfundidad>avanzado</nivelProfundidad>
+			<autores>
+				<autor>JRR Tolkien</autor>
+			</autores>
+			<editorial>Minotauro</editorial>
+			<fechaPublicacion>1970</fechaPublicacion>
+			<paginaWeb>www.lacomunidaddelanillo.com</paginaWeb>
+			<precio moneda="&#8364;">20</precio>
+		</libro>
+		<libro>
+			<ISBN>84-350-0202-5</ISBN>
+			<titulo>El Se�or de los Anillos - Las dos torres</titulo>
+			<nivelProfundidad>avanzado</nivelProfundidad>
+			<autores>
+				<autor>JRR Tolkien</autor>
+			</autores>
+			<editorial>Minotauro</editorial>
+			<fechaPublicacion>1972</fechaPublicacion>
+			<paginaWeb>www.lasdostorres.com</paginaWeb>
+			<precio moneda="&#8364;">22</precio>
+		</libro>
+		<libro>
+			<ISBN>84-350-0202-9</ISBN>
+			<titulo>El Se�or de los Anillos - El retorno del rey</titulo>
+			<nivelProfundidad>avanzado</nivelProfundidad>
+			<autores>
+				<autor>JRR Tolkien</autor>
+			</autores>
+			<editorial>Minotauro</editorial>
+			<fechaPublicacion>1975</fechaPublicacion>
+			<paginaWeb>www.elretornodelrey.com</paginaWeb>
+			<precio moneda="&#8364;">25</precio>
+		</libro>
+	</libreria>
+	<libreria>
+		<nombre>Sala</nombre>
+		<libro>
+			<ISBN>84-350-0203-1</ISBN>
+			<titulo>Harry Potter - La piedra filosofal</titulo>
+			<nivelProfundidad>avanzado</nivelProfundidad>
+			<autores>
+				<autor>J.K.Rowling</autor>
+			</autores>
+			<editorial>SALAMANDRA PUBLICACIONES Y EDICIONES, S.A.</editorial>
+			<fechaPublicacion>1997</fechaPublicacion>
+			<paginaWeb>www.harrypotterlapiedrafilosofal.com</paginaWeb>
+			<precio moneda="&#8364;">27</precio>
+		</libro>
+		<libro>
+			<ISBN>84-350-0203-2</ISBN>
+			<titulo>Harry Potter - La cámara secreta</titulo>
+			<nivelProfundidad>avanzado</nivelProfundidad>
+			<autores>
+				<autor>J.K.Rowling</autor>
+			</autores>
+			<editorial>SALAMANDRA PUBLICACIONES Y EDICIONES, S.A.</editorial>
+			<fechaPublicacion>1998</fechaPublicacion>
+			<paginaWeb>www.harrypotterlacamarasecreta.com</paginaWeb>
+			<precio moneda="&#8364;">26</precio>
+		</libro>
+		<libro>
+			<ISBN>84-350-0203-3</ISBN>
+			<titulo>Harry Potter - El prisionero de Azkaban</titulo>
+			<nivelProfundidad>avanzado</nivelProfundidad>
+			<autores>
+				<autor>J.K.Rowling</autor>
+			</autores>
+			<editorial>SALAMANDRA PUBLICACIONES Y EDICIONES, S.A.</editorial>
+			<fechaPublicacion>1999</fechaPublicacion>
+			<paginaWeb>www.harrypotterelprisionerodeazkaban.com</paginaWeb>
+			<precio moneda="&#8364;">30</precio>
+		</libro>
+	</libreria>
+</busquedaLibros>
