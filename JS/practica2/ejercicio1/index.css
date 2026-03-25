@@ -1,0 +1,10 @@
+table {
+  border-radius: 16px;
+  background: whitesmoke;
+  padding: 16px 12px;
+}
+
+td,
+th {
+  padding: 0px 4px;
+}
