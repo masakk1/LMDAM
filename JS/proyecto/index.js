@@ -1,3 +1,7 @@
+const body = document.getElementsByTagName("body")[0];
+
 search_artist("Dr.%20Dre").then((artists) => {
-  console.log(artists);
+  artists.forEach((a) => {
+    body.appendChild(a.draw());
+  });
 });
