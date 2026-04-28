@@ -5,7 +5,8 @@ class HTTP {
     return new Promise((resolve, reject) => {
       var http = new XMLHttpRequest();
       http.open(method, url, true);
-      http.setRequestHeader("Content-type", "application/json");
+      http.setRequestHeader("Accept", "application/json");
+      http.setRequestHeader("User-Agent", "Masakk1SchoolProyect");
       http.send(data);
 
       http.addEventListener("load", (event) => {
