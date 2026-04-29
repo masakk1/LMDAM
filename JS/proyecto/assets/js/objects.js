@@ -21,7 +21,7 @@ class Artist {
 
     /* Tag List */
     const tags = document.createElement("div");
-    tags.className = "d-flex gap-1";
+    tags.className = "d-flex flex-wrap gap-1";
 
     this.tags.slice(0, 3).forEach((t) => {
       const tagElement = document.createElement("span");
