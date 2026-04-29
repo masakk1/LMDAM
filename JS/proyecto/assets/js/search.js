@@ -35,7 +35,8 @@ class HTTP {
           ?.filter((t) => t.count > 0)
           .toSorted((t1, t2) => t2.count - t1.count)
           .map((t) => t.name);
-        artists[i] = new Artist("assets/img/64x64.svg", a.name, tags);
+        console.log(`Artist found: ${a.mbid}`);
+        artists[i] = new Artist(a.name, tags);
       });
 
       return artists;

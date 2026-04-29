@@ -1,16 +1,37 @@
 "use strict";
 
 class Artist {
-  constructor(img, name, tags) {
-    this.img = img;
+  constructor(name, tags) {
     this.name = name;
-    this.tags = tags;
+    this.tags = tags ?? [];
   }
 
   draw() {
     const div = document.createElement("div");
-    div.classList.add("artist");
+    // p-2: standard padding | mb-2: standard bottom margin
+    // bg-body-secondary: standard adaptive background
+    // rounded: standard border radius
+    div.className =
+      "artist simple-hover d-flex align-items-center justify-content-between p-2 mb-2 bg-body-secondary rounded";
 
+    /* Artist Name */
+    const name = document.createElement("span");
+    name.className = "fw-bold ms-2"; // Bold and a little left margin
+    name.textContent = this.name;
+
+    /* Tag List */
+    const tags = document.createElement("div");
+    tags.className = "d-flex gap-1";
+
+    this.tags.slice(0, 3).forEach((t) => {
+      const tagElement = document.createElement("span");
+      // text-bg-secondary: standard gray badge
+      tagElement.className = "badge text-bg-secondary";
+      tagElement.textContent = t;
+      tags.appendChild(tagElement);
+    });
+
+    div.append(name, tags);
     return div;
   }
 }
