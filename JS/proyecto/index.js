@@ -1,6 +1,6 @@
 const body = document.getElementsByTagName("body")[0];
 
-search_artist("Dr.%20Dre").then((artists) => {
+HTTP.search_artist("Dr.%20Dre").then((artists) => {
   artists.forEach((a) => {
     body.appendChild(a.draw());
   });
