@@ -20,12 +20,6 @@ body {
   filter: brightness(0.95);
 }
 
-/* Dark Mode: Brighten (Supports Media Query & Bootstrap attribute) */
-@media (prefers-color-scheme: dark) {
-  .simple-hover:hover {
-    filter: brightness(1.2);
-  }
-}
 [data-bs-theme="dark"] .simple-hover:hover {
   filter: brightness(1.2);
 }
