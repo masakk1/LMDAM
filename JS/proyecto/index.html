@@ -23,16 +23,20 @@
   <body>
     <div class="container app-container mx-auto">
       <div class="d-flex gap-2 mb-4">
-        <div class="input-group flex-grow-1">
-          <span class="input-group-text bg-transparent border-end-0">
+        <form id="searchForm" class="input-group flex-grow-1">
+          <button
+            type="submit"
+            class="input-group-text bg-transparent border-end-0"
+          >
             <i class="bi bi-search text-secondary"></i>
-          </span>
+          </button>
           <input
+            id="searchInput"
             type="text"
             class="form-control border-start-0"
             placeholder="Search..."
           />
-        </div>
+        </form>
 
         <select class="form-select w-auto">
           <option selected>Artists</option>
