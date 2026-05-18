@@ -42,4 +42,17 @@ class HTTP {
       return artists;
     });
   }
+
+  static search_recording(query) {
+    return HTTP.ajax(
+      "GET",
+      `http://musicbrainz.org/ws/2/recording?query=${query}`,
+    ).then((data) => {
+      let recordings = [];
+
+      data.recordings.forEach((r, i) => {
+        console.log(r);
+      });
+    });
+  }
 }
