@@ -51,9 +51,7 @@ class HTTP {
       let recordings = [];
 
       data.recordings.forEach((r, i) => {
-        const artistCredits = r["artist-credit"].map((cred) => cred.name);
-
-        recordings[i] = new Recording(r.title, artistCredits);
+        recordings[i] = new ReleaseTrack(r);
       });
 
       return recordings;
