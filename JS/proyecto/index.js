@@ -28,6 +28,10 @@ searchForm.addEventListener("submit", (e) => {
     case "1":
       HTTP.search_recording(searchInput.value).then((recordings) => {
         cleanContainer();
+
+        recordings.forEach((r) => {
+          resultContainer.appendChild(r.draw());
+        });
       });
       break;
 

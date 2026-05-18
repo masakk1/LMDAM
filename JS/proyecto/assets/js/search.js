@@ -51,8 +51,12 @@ class HTTP {
       let recordings = [];
 
       data.recordings.forEach((r, i) => {
-        console.log(r);
+        const artistCredits = r["artist-credit"].map((cred) => cred.name);
+
+        recordings[i] = new Recording(r.title, artistCredits);
       });
+
+      return recordings;
     });
   }
 }
