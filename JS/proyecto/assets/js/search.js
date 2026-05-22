@@ -35,8 +35,10 @@ class HTTP {
           ?.filter((t) => t.count > 0)
           .toSorted((t1, t2) => t2.count - t1.count)
           .map((t) => t.name);
-        console.log(`Artist found: ${a.mbid}`);
-        artists[i] = new Artist(a.name, tags);
+
+        const url = `https://musicbrainz.org/artist/${a.id}`;
+
+        artists[i] = new Artist(a.name, tags, url);
       });
 
       return artists;
